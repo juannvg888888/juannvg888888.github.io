@@ -1,0 +1,360 @@
+/*-----------GENERAL e INDEX-----------*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: linear-gradient(to top, rgb(154, 161, 245), rgba(43, 43, 197, 0.945));
+  color: rgb(20, 19, 19);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a:hover {
+  color: black;
+  box-shadow: 8px 0px 50px rgba(0, 0, 0, 0.9);
+}
+
+.FotoE:hover {
+  color: black;
+  background-color: rgb(182, 222, 235);
+}
+
+a:active {
+  color: white;
+  background-color: black;
+}
+
+a:visited {
+  color: white;
+}
+
+nav {
+  background-color: rgb(34, 34, 121);
+  border-bottom: 100px rgb(202, 193, 193);
+  padding: 20px;
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: x-large;
+  font-style: oblique;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.icono {
+  max-width: 5rem;
+  margin-left: 1px;
+  padding: 20px 35px 20px 20px;
+}
+
+.latido {
+  animation-name: latido;
+  animation-iteration-count: 3;
+  animation-duration: 1s;
+}
+
+@keyframes latido {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+nav {
+  height: 10%;
+}
+
+nav ul {
+  list-style: none;
+  padding: px;
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+main {
+  min-height: 250px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  color: rgb(208, 223, 223);
+}
+
+Section {
+  min-height: 250px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.FotoE {
+  border: solid white;
+  padding: 50px;
+}
+
+footer {
+  background-color: rgb(34, 34, 121);
+  align-items: center;
+  text-align: center;
+  height: 230px;
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footerR {
+  padding: 1px 4px;
+  flex-wrap: wrap;
+  border-radius: 18px;
+  animation-name: redes;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes redes {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.copy {
+  float: right;
+}
+
+/*-----------FIN DEL GENERAL e INDEX-----------*/
+/*--------------GENERAL CELULAR--------------*/
+@media only screen and (max-width: 480px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
+  nav {
+    flex-direction: column;
+    color: white;
+  }
+  .icono {
+    min-width: 15rem;
+    padding-right: 180px;
+    align-items: center;
+    border: black;
+  }
+  nav ul {
+    flex-direction: column;
+    color: white;
+    text-size-adjust: 100%;
+  }
+  nav li {
+    padding: 5px;
+  }
+  main {
+    text-align: justify;
+    padding: 35px;
+    margin: auto auto auto auto;
+  }
+  section {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .FotoE {
+    padding: 5px;
+  }
+  footer {
+    justify-content: center;
+    min-height: 120px;
+    text-align: center;
+    color: white;
+  }
+  .footerR {
+    width: 55px;
+    height: 50px;
+  }
+}
+/*----------FIN DEL GENERAL CELULAR----------*/
+/*------------------HISTORIA-------------------*/
+/*
+.mainH
+{
+    min-height: 600px;
+    margin-top: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: justify;
+
+}
+*/
+.imagen2 {
+  width: 90%;
+  height: 60%;
+  align-items: center;
+}
+
+@media only screen and (max-width: 480px) { /*
+   .mainH
+   {
+       text-align: justify;
+       padding: 5px;
+       min-height: 1220px;
+       margin-top: 100px;
+       margin-left: 20px;
+       margin-right: 20px;
+   }*/
+  .imagen2 {
+    width: 385px;
+    height: 260px;
+    align-items: center;
+  }
+}
+/*--------------FIN DE LA HISTORIA--------------*/
+/*------------------CONTACTO-------------------*/
+form {
+  width: 50%;
+  padding: 15px 10px;
+  font-size: 15px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+textarea {
+  width: 100%;
+  min-height: 250px;
+  max-height: 300px;
+}
+
+.btn-enviar {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background: rgb(34, 34, 121);
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+@media only screen and (max-width: 480px) {
+  h2 {
+    text-align: center;
+    padding: 5px;
+  }
+  form {
+    width: 90%;
+  }
+}
+/*--------------FIN DEL CONTACTO--------------*/
+/*-----------ASCENSOS-----------*/
+.sectionA {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  margin: 50px;
+  text-align: justify;
+}
+
+iframe {
+  flex-direction: column;
+  justify-content: center;
+  width: 900px;
+  height: 600px;
+}
+
+.imagen4 {
+  max-width: 15rem;
+}
+
+h3 {
+  text-align: justify;
+  padding: 20px;
+}
+
+p {
+  padding: 50px;
+  color: rgb(208, 223, 223);
+}
+
+.parrafocar1 {
+  color: rgb(20, 19, 19);
+  background-color: rgba(194, 177, 157, 0.75);
+  font-weight: bold;
+  font-size: larger;
+  align-items: center;
+  height: 5%;
+  width: 20%;
+}
+
+.ul {
+  text-align: justify;
+  margin-top: 10px;
+  padding: 50px;
+}
+
+.carousel-item {
+  width: 10%;
+}
+
+@media only screen and (max-width: 480px) {
+  .mainA {
+    text-align: justify;
+    padding: 35px;
+    margin: auto auto auto auto;
+  }
+  .sectionA {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px;
+    margin: auto auto auto auto;
+    text-align: justify;
+    max-width: 100%;
+  }
+  iframe {
+    width: 350px;
+    max-height: 200px;
+  }
+  .imagen4 {
+    max-width: 10rem;
+    padding: 0px;
+    justify-content: center;
+  }
+  p {
+    justify-content: center;
+    padding: 0px;
+  }
+}
+/*-----------FIN DE ASCENSOS-----------*/
+
+/*# sourceMappingURL=estilo.css.map */
