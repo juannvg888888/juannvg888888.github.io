@@ -111,7 +111,17 @@ Section {
 
 .FotoE {
   border: solid white;
-  padding: 50px;
+  padding: 10px;
+}
+
+.FotoE2 {
+  min-width: 330px;
+  min-height: 200px;
+}
+
+.FotoE2:hover {
+  min-width: 430px;
+  min-height: 280px;
 }
 
 footer {
@@ -227,8 +237,8 @@ footer {
        margin-right: 20px;
    }*/
   .imagen2 {
-    width: 385px;
-    height: 260px;
+    width: 350px;
+    height: 240px;
     align-items: center;
   }
 }
@@ -344,6 +354,10 @@ p {
   iframe {
     width: 350px;
     max-height: 200px;
+  }
+  .d-block {
+    min-width: 325px;
+    min-height: 230px;
   }
   .imagen4 {
     max-width: 10rem;

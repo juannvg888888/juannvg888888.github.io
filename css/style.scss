@@ -145,8 +145,19 @@ Section
 .FotoE
 {
     border: solid $color-texto2;
-    padding: 50px  ;
-   
+    padding: 10px;  
+}
+
+.FotoE2
+{
+    min-width: 330px;
+    min-height: 200px;
+}
+
+.FotoE2:hover
+{
+    min-width: 430px;
+    min-height: 280px;
 }
 
 footer
@@ -247,7 +258,6 @@ footer
 
     .FotoE
     {
-        
         padding: 5px;
         
     }
@@ -306,9 +316,10 @@ footer
 
     .imagen2
     {
-        width: 385px;
-        height: 260px;
+        width: 350px;
+        height: 240px;
         align-items: center;
+
     }
     
 }
@@ -468,6 +479,12 @@ p
         width: 350px;
         max-height: 200px;
         
+    }
+
+    .d-block
+    {
+        min-width: 325px;
+        min-height: 230px;  
     }
 
 
